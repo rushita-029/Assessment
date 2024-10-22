@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .all {
+            overflow-x: hidden;
+        }
+
+        .nav {
+            height: auto;
+            width: auto;
+            background-color: #2b2a2a;
+            color: white;
+        }
+
+        .header {
+
+            height: auto;
+            width: auto;
+            background-color: gray;
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+        }
+
+
+
+        .header>ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 30px;
+            list-style: none;
+            font-size: 29px;
+            /* font-weight: 500; */
+            font-family: "Poppins";
+        }
+
+        .screen1 {
+            height: 600px;
+            background-size: 1706px;
+            background-image: url(pic1.jpg);
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .shape {
+            background-color: gray;
+            opacity: 0.600;
+            height: 603px;
+            width: 1415px;
+        }
+
+        .txt {
+            color: rgba(248, 246, 246, 0.952);
+            color: rgba(248, 246, 246, 0.952);
+            display: flex;
+            flex-direction: column;
+            padding: 100px;
+        }
+
+        .txt>button {
+            background-color: red;
+            color: white;
+            border-radius: 50px;
+            height: 44px;
+            width: 197px;
+        }
+
+        .c {
+            background-color: red;
+            color: white;
+            gap: 20px;
+            border-radius: 23px;
+            height: 203px;
+            width: 319px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 40px;
+            text-align: center;
+            /* margin: -82px; */
+
+        }
+
+        .c>i {
+            /* background-color: #ffffff; */
+            width: 40px;
+            height: 39px;
+            gap: 20px;
+            border-radius: 332px;
+            font-size: 31px;
+            color: #e49218;
+
+        }
+        @media only screen and(max-width:400px) {
+            .all {
+            overflow-x: hidden;
+        }
+        .nav {
+            height: auto;
+            width: auto;
+            background-color: #2b2a2a;
+            color: white;
+        }
+
+        .header {
+
+            height: auto;
+            width: auto;
+            background-color: gray;
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+        }
+
+
+
+        .header>ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 30px;
+            list-style: none;
+            font-size: 29px;
+            /* font-weight: 500; */
+            font-family: "Poppins";
+        }
+
+        .screen1 {
+            height: 600px;
+            background-size: 1706px;
+            background-image: url(pic1.jpg);
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .shape {
+            background-color: gray;
+            opacity: 0.600;
+            height: 603px;
+            width: 1415px;
+        }
+
+        .txt {
+            color: rgba(248, 246, 246, 0.952);
+            color: rgba(248, 246, 246, 0.952);
+            display: flex;
+            flex-direction: column;
+            padding: 100px;
+        }
+
+        .txt>button {
+            background-color: red;
+            color: white;
+            border-radius: 50px;
+            height: 44px;
+            width: 197px;
+        }
+
+        .c {
+            background-color: red;
+            color: white;
+            gap: 20px;
+            border-radius: 23px;
+            height: 203px;
+            width: 319px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 40px;
+            text-align: center;
+            /* margin: -82px; */
+
+        }
+
+        .c>i {
+            /* background-color: #ffffff; */
+            width: 40px;
+            height: 39px;
+            gap: 20px;
+            border-radius: 332px;
+            font-size: 31px;
+            color: #e49218;
+
+        }
+            
+        }
+
+        .screen3 {
+            background-color: #463f3f;
+            height: 775px;
+            width: auto;
+            /* padding: 55px; */
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            /* display: flex;
+            flex-wrap: wrap; */
+        }
+
+        .screen3>h1 {
+            text-align: center;
+            height: 88px;
+            background-color: #463f3f;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* margin-top: -108px; */
+
+        }
+
+        .co1 {
+            background-color: white;
+            color: white;
+            gap: 20px;
+            border-radius: 23px;
+            height: 302px;
+            width: 321px;
+            padding: 32px;
+            margin-left: 69px;
+        }
+
+        .container3 {
+            display: flex;
+            /* padding: 82px; */
+            margin-left: 506px;
+            gap: 30px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: -368px;
+            /* width: 138px; */
+        }
+
+        .co {
+            background-color: white;
+            color: white;
+            gap: 20px;
+            border-radius: 23px;
+            height: 300px;
+            width: 380px;
+
+        }
+
+        .co1>h3 {
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .co1>h5 {
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .co1>button {
+
+            background-color: red;
+            border: none;
+            border-radius: 36px;
+            height: 37px;
+            width: 278px;
+            color: white;
+            margin-top: 61px;
+        }
+
+        .b1 {
+            background-image: url(b5.jpg);
+            height: 178px;
+            width: 381px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .b1>button {
+            background-color: white;
+            border: none;
+            border-radius: 12px;
+            height: 35px;
+            width: 119px;
+            color: black;
+            margin-top: 18px;
+            margin-left: 15px;
+            text-align: center;
+
+        }
+
+        .co>h3 {
+            color: black;
+            margin-left: 102px;
+            margin-top: -36px;
+        }
+
+        .co>h5 {
+            color: black;
+            margin-left: 111px;
+        }
+
+        .date {
+            color: black;
+            margin-left: 29px;
+            margin-top: 29px;
+        }
+
+        .b11 {
+            background-image: url(b3.jpeg);
+            height: 178px;
+            width: 381px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .screen4 {
+            height: 600px;
+            background-size: 1706px;
+            background-image: url(b7.avif);
+            height: 544px;
+            /* width: 1340px; */
+            background-size: 1406px;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .shape2 {
+            background-color: gray;
+            opacity: 0.800;
+            height: 546px;
+            background-size: cover;
+            width: 1335px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        .box1 {
+            height: 154px;
+            width: 619px;
+            background-color: #b5acac;
+            text-align: center;
+            /* margin: 72px; */
+            margin-left: 62px;
+            margin-top: 55px;
+        }
+
+
+        .box1>button {
+            background-color: red;
+            border: none;
+            border-radius: 36px;
+            height: 35px;
+            width: 128px;
+            color: white;
+            margin-top: -10px;
+            text-align: left;
+            margin-left: -432px;
+        }
+
+        .button2 {
+            background-color: rgba(255, 208, 0, 0.897);
+            border: none;
+            border-radius: 36px;
+            height: 35px;
+            width: 128px;
+            color: white;
+            margin-top: -10px;
+            text-align: left;
+            margin-left: 21px;
+            color: white;
+            margin-top: -10px;
+            /* text-align: left; */
+            margin-left: 21px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .box1>h2 {
+            text-align: left;
+            margin-left: 25px;
+        }
+
+        .box1>h5 {
+            text-align: left;
+            margin-left: 25px;
+        }
+
+        .box3 {
+            height: 405px;
+            width: 600px;
+            border-radius: 20px;
+            background-color: white;
+            margin-left: 710px;
+            margin-top: -396px;
+        }
+
+        .box3>h1 {
+            color: #e49218;
+        }
+
+        .box3>i {
+            color: #e49218;
+        }
+
+        .box3>h5 {
+            color: black;
+        }
+
+        .s {
+            margin-left: 1160px;
+            margin-top: -389px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 80px;
+        }
+
+        .screen5 {
+            background-color: #463f3f;
+            height: 615px;
+            width: auto;
+
+        }
+
+        .s5 {
+            height: 129px;
+            background-color: #414040;
+            color: white;
+            text-align: center;
+            /* margin: -21px; */
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            margin-top: 0px;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .box {
+            height: 257px;
+            width: 242px;
+            background-color: white;
+             margin-left: 7px; 
+            margin-top: 56px;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: row;
+            margin-right: 62px;
+        }
+
+        .b4 {
+            background-image: url(b4.jpg);
+            height: 146px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 244px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box>h3 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dote {
+            font-size: 84px;
+            margin-top: -59px;
+            margin-left: 16px;
+            color: rgb(240, 204, 3);
+        }
+
+        .box5 {
+            height: 300px;
+            width: 242px;
+            background-color: white;
+            /* margin-left: 43px; */
+            margin-top: 69px;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: row;
+            margin-right: 62px;
+        }
+
+        .box5>h3 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dote {
+            font-size: 84px;
+            margin-top: -59px;
+            margin-left: 16px;
+            color: rgb(240, 204, 3);
+        }
+
+        .boxes>i {
+            height: 30px;
+            width: 35px;
+            background-color: white;
+            border-radius: 72px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 107px;
+            margin-left: -50px;
+        }
+
+        .screen5>text {
+            font-size: 84px;
+            margin-top: -59px;
+            margin-left: 600px;
+            color: white;
+        }
+
+        .screen6 {
+            height: 600px;
+            background-size: 1706px;
+            background-image: url(pic1.jpg);
+            background-repeat: no-repeat;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        .shape3 {
+            background-color: gray;
+            opacity: 0.800;
+            height: 600px;
+        }
+
+        .f {
+            color: white;
+            margin-left: 103px;
+            font-size: 55px;
+            padding: 8px;
+        }
+
+        .bo1 {
+            height: 141px;
+            width: 268px;
+            background-color: #463f3f;
+            border-radius: 19px;
+            margin-left: 103px;
+            margin-top: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .bo2 {
+            height: 141px;
+            width: 268px;
+            background-color: #463f3f;
+            border-radius: 19px;
+            margin-left: 394px;
+            margin-top: -262px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .bo3 {
+            height: 141px;
+            width: 268px;
+            background-color: #463f3f;
+            border-radius: 19px;
+            margin-left: 394px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .bo6 {
+            background-image: url(b6.jpg);
+            height: 315px;
+            width: 437px;
+            border-radius: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 760px;
+            margin-top: -368px;
+        }
+
+        .shape6 {
+            height: 315px;
+            width: 437px;
+            border-radius: 20px;
+            background-color: #e49218;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .screen7 {
+            background-color: #463f3f;
+            height: 775px;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .b7 {
+
+            background-color: white;
+            height: 300px;
+            width: 700px;
+            border-radius: 10px;
+            margin-left: 201px;
+        }
+
+        .t1 {
+            height: 33px;
+            width: 631px;
+            background-color: wheat;
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        .t2 {
+            height: 33px;
+            width: 222px;            background-color: wheat;
+            border-radius: 10px;
+            margin-left: 30px;
+
+        }
+
+        .t3 {
+            height: 33px;
+            width: 222px;
+            background-color: wheat;
+            border-radius: 10px;
+            margin-left: 261px;
+            margin-top: -54px;
+        }
+
+        .t4 {
+            height: 33px;
+            width: 182px;
+            background-color: wheat;
+            border-radius: 10px;
+            margin-left: 492px;
+            margin-top: -54px;
+        }
+
+        .t5 {
+            height: 90px;
+            width: 661px;
+            background-color: wheat;
+            border-radius: 10px;
+            margin-left: 14px;
+        }
+
+        .bu5>button {
+            background-color: red;
+            color: white;
+            border-radius: 50px;
+            height: 44px;
+            width: 244px;
+            margin: 20px;
+            border: none;
+        }
+
+        .last {
+            background-color: red;
+            height: 372px;
+            width: 239px;
+            border-radius: 30px;
+            margin: 31px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="nav">Create a layout using HTML and CSS.
+    <header class=header>
+        <h1>EDU MEETING</h1>
+        <ul>
+            <li>home</li>
+            <li>meeting</li>
+            <li>apply now</li>
+            <li>about</li>
+            <li>courses</li>
+            <li>contact</li>
+        </ul>
+    </header>
+</div>
+<div class="all">
+    <div class="screen1">
+        <div class="shape">
+            <div class="img">
+                <div class="txt">
+                    <H3>HELLO STUDENTS</H3>
+                    <h1>WELCOME TO EDUCTION</h1>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,<br>
+                        inventore voluptas quibusdam dolor distinctio repellat ipsum culpa a sunt officiis<br>
+                        deserunt at praesentium nostrum sequi eum ipsam recusandae molestiae.</h5>
+
+                    <button>JOIN US NOW !</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="c">
+            <!-- <i class="fa-solid fa-book-open-reader"></i> -->
+            <h2>Best Education</h2>
+            <h4>Lorem ipsum dolor sit amet <br>consectetur adipisicing <br>elit. Eum, quaerat.</h4>
+        </div>
+        <div class="c">
+            <h2>Best Teachers</h2>
+            <h4>Lorem ipsum dolor sit amet <br>consectetur adipisicing <br>elit. Eum, quaerat.</h4>
+        </div>
+        <div class="c">
+            <h2>Best Students</h2>
+            <h4>Lorem ipsum dolor sit amet <br>consectetur adipisicing <br>elit. Eum, quaerat.</h4>
+        </div>
+    </div>
+    <div class="screen3">
+        <H1>UPCOMING MEETING</H1>
+        <div class="container2">
+
+            <div class="co1">
+                <h3>Meeting Categories</h3>
+                <h5>Lorem ipsum dolor sit amet <br> adipisicing elit.<br>
+                    Lorem ipsum dolor, sit amet <br>consectetur adipisicing <br>elit. In, excepturi!</h5>
+                <button>Add Upcoming Meeting</button>
+            </div>
+        </div>
+        <div class="container3">
+
+            <div class="co">
+
+                <div class="b1">
+                    <button>$22.00</button>
+                </div>
+                <div class="date">NOV <br>
+                    <b>10</b>
+                </div>
+                <h3>New Lectures Meeting</h3>
+                <h5>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor</h5>
+            </div>
+
+            <div class="co">
+                <div class="b1">
+                    <button>$36.00</button>
+                </div>
+                <div class="date">NOV<br><b>24</b></div>
+                <h3>Online Teaching Techniques</h3>
+                <h5>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor</h5>
+            </div>
+            <br>
+            <div class="co">
+                <div class="b1">
+                    <button>$14.00</button>
+                </div>
+                <div class="date">NOV<br><b>26</b></div>
+                <h3>Hiegher Education Conforance</h3>
+                <h5>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor</h5>
+            </div>
+            <div class="co">
+                <div class="b1">
+                    <button>$48.00</button>
+                </div>
+                <div class="date">NOV<br><b>30</b></div>
+                <h3>Student Treining Meetup</h3>
+                <h5>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor</h5>
+            </div>
+        </div>
+    </div>
+    <div class="screen4">
+        <div class="shape2">
+            <div class="box1">
+                <h2>APPLY FOR BACHLOR DEGREE</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Molestiae veritatis, sed sunt eos asperiores dicta autem ducimus<br>
+                    incidunt eaque repellendus!</h5>
+                <button>JOIN US NOW !</button>
+            </div>
+            <div class="box1">
+                <h2>APPLY FOR BACHLOR DEGREE</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Molestiae veritatis, sed sunt eos asperiores dicta autem ducimus<br>
+                    incidunt eaque repellendus!</h5>
+                <div class="button2">
+                    <button2>JOIN US NOW !</button2>
+                </div>
+            </div>
+            <div class="box3">
+                <h1>About Edu Meeting HTML Template</h1>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Quia amet omnis libero odit iste voluptate <br>
+                    aliquid pariatur officiis, itaque blanditiis.<br>
+                    Lorem ipsum dolor sit amet.</h5>
+                <h2>HTML CSS Bootstrap layout</h2>
+                <h5>Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</h5>
+                <h2>please tell your Layout</h2>
+                <h5>Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</h5>
+                <h2>Shere this to your colleagues</h2>
+                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, provident! </h5>
+
+            </div>
+            <div class="s">
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="screen5">
+        <div class="s5">
+            <h2>OUR POPULER COURSES</h2>
+        </div>
+        <div class="boxes">
+            <i class="fa-solid fa-chevron-left"></i>
+            <div class="box">
+                <div class="b4"></div>
+                <h3>Please Visit our <br>website again</h3>
+                <div class="dote">.....
+                    <text style="color: black; font-size: medium; margin-left: 39px;">$ 300</text>
+                </div>
+            </div>
+            <div class="box">
+                <div class="b4"></div>
+                <h3>Responsive HTML <br>Templates for you</h3>
+                <div class="dote">.....
+                    <text style="color: black; font-size: medium; margin-left: 39px;">$ 400</text>
+                </div>
+            </div>
+            <div class="box5">
+                <div class="b4"></div>
+                <h3>Daunlode free CSS <br>Layouts for your<br>Business</h3>
+                <div class="dote">.....
+                    <text style="color: black; font-size: medium; margin-left: 39px;">$ 430</text>
+                </div>
+            </div>
+            <div class="box">
+                <div class="b4"></div>
+                <h3>Morbi in libero blendit<br>Lecture </h3>
+                <div class="dote">.....
+                    <text style="color: black; font-size: medium; margin-left: 39px;">$ 480</text>
+                </div>
+            </div>
+            <!-- <i class="fa-solid fa-chevron-left"></i> -->
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <text>...<text>
+    </div>
+    <div class="screen6">
+        <div class="shape3">
+            <div class="f">
+                A few Facts about our<br> Univercity</div>
+            <div class="bo1">
+                <h3 style="font-size: 45px;
+            color: rgb(245, 149, 6);"><b>94 %</b></h3>
+                <h2 style="color: white;
+            margin-top: -44px;
+            font-size: 31px;">successed students</h2>
+            </div>
+            <div class="bo1">
+                <h3 style="font-size: 45px;
+            color: rgb(245, 149, 6);"><b>126</b></h3>
+                <h2 style="color: white;
+            margin-top: -44px;
+            font-size: 31px;">current teachers</h2>
+            </div>
+            <div class="bo2">
+                <h3 style="font-size: 45px;
+            color: rgb(245, 149, 6);"><b>2345</b></h3>
+                <h2 style="color: white;
+            margin-top: -44px;
+            font-size: 31px;">New Students</h2>
+            </div><br>
+            <div class="bo3">
+                <h3 style="font-size: 45px;
+            color: rgb(245, 149, 6);"><b>32</b></h3>
+                <h2 style="color: white;
+            margin-top: -44px;
+            font-size: 31px;">Awards</h2>
+            </div>
+            <div class="bo6">
+                <div class="shape6">
+                    <i class="fa-regular fa-circle-play" style="color: white;
+                   font-size: 51px;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="screen7">
+        <div class="b7">
+            <div class="t1">
+                <h3>LET'S GET IN TOUCH</h3>
+            </div>
+            <DIV class="t2">
+                <H5>Your name</H5>
+            </DIV>
+            <div class="t3">
+                <h5>phone no</h5>
+            </div>
+            <div class="t4">
+                <h5>email</h5>
+            </div>
+            <div class="t5">
+                <h5>send your massage</h5>
+            </div>
+            <div class="bu5">
+                <button>ADMISSION NOW</button>
+            </div>
+        </div>
+        <div class="last">
+            <div class="phn">
+                <h5>Phone Number<br>
+                    123-345-678-90</h5>
+            </div>
+            <div class="email">
+                <h5>Email Address<br>
+                    rushigosai@gmail.com</h5>
+            </div>
+            <div class="add">
+                <h5>Streat Address<br>
+                    5, bandra bulding<br>mumbai</h5>
+            </div>
+            <div class="link">
+                <h5>website link<br>
+                    www.meeting.edu</h5>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+</html>
